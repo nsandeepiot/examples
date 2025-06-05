@@ -33,8 +33,10 @@ class AssetModel(Model):
 
     asset_id = UnicodeAttribute(hash_key=True)
     state = UnicodeAttribute(null=False, default=State.CREATED.name)
-    createdAt = UTCDateTimeAttribute(null=False, default=datetime.now().astimezone())
-    updatedAt = UTCDateTimeAttribute(null=False, default=datetime.now().astimezone())
+    # Default timestamps should be generated at save time to avoid sharing the
+    # same value across instances when the module is imported.
+    createdAt = UTCDateTimeAttribute(null=False, default=lambda: datetime.now().astimezone())
+    updatedAt = UTCDateTimeAttribute(null=False, default=lambda: datetime.now().astimezone())
 
     def __str__(self):
         return 'asset_id:{}, state:{}'.format(self.asset_id, self.state)
