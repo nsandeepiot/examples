@@ -5,6 +5,6 @@
   "author": "Andreas Heissenberger <andreas@heissenberger.at>",
   "license": "MIT",
   "dependencies": {
-    "mailparser": "^2.3.4"
+    "mailparser": "^3.9.3"
   }
 }
