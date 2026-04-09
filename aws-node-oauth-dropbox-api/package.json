@@ -18,7 +18,7 @@
   "dependencies": {
     "btoa": "^1.2.1",
     "request": "^2.87.0",
-    "serverless": "^1.27.3"
+    "serverless": "^1.83.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
