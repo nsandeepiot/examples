@@ -9,6 +9,6 @@
     "deploy": "npm run build && npm run test && node_modules/.bin/serverless deploy --verbose"
   },
   "devDependencies": {
-    "serverless": "^1.33.2"
+    "serverless": "^4.35.0"
   }
 }
