@@ -6,7 +6,7 @@
   "author": "Christoph Gysin <christoph.gysin@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "uuid": "^2.0.3"
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "aws-sdk": "^2.12.0",
